@@ -16,7 +16,6 @@ ENV PIP_NO_CACHE_DIR=off \
     POETRY_NO_INTERACTION=1
 
 RUN pip install poetry
-RUN playwright install chrome
 
 # copy the source into the virtual space
 COPY . /app/
